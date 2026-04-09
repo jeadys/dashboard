@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import {Employee} from "./pages/Employee";
 import {Plane} from "./pages/Plane";
 import {Weather} from "./pages/Weather";
-import {PlanFlightButton} from "./components/PlanFlightButton";
+import {PlanFlight} from "./components/PlanFlight.tsx";
 
 function App() {
     return (
@@ -13,7 +13,7 @@ function App() {
 
             <BrowserRouter>
                 <Navbar/>
-                <PlanFlightButton title="Plan Mission Flight"/>
+                <PlanFlight/>
                 <Routes>
                     <Route path="/" element={<Employee/>}/>
                     <Route path="/plane" element={<Plane/>}/>
