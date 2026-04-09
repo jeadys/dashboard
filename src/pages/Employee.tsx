@@ -3,17 +3,17 @@ import {type EmployeeType} from "../components/employee/EmployeeList";
 import {Section} from "../components/Section";
 
 const employees: EmployeeType[] = [
-    { id: 1, name: "Alice Johnson", title: "Software Engineer", status: true, department: "CIS" },
-    { id: 2, name: "Bob Smith", title: "Product Manager", status: false, department: "Finance" },
-    { id: 3, name: "Charlie Brown", title: "UX Designer", status: true, department: "Cyber" },
-    { id: 4, name: "Diana Prince", title: "QA Engineer", status: true, department: "DETCO" },
-    { id: 5, name: "Ethan Clark", title: "DevOps Engineer", status: false, department: "Ground" },
-    { id: 6, name: "Fiona Davis", title: "HR Manager", status: true, department: "Air" },
-    { id: 7, name: "George Miller", title: "Data Analyst", status: true, department: "Whitecell" },
-    { id: 8, name: "Hannah Wilson", title: "Marketing Specialist", status: false, department: "CIS" },
-    { id: 9, name: "Ian Taylor", title: "Backend Developer", status: true, department: "Cyber" },
-    { id: 10, name: "Julia Anderson", title: "Frontend Developer", status: false, department: "Finance" },
-]
+    { id: 1, name: "Alice Johnson", title: "Helicopter Pilot", status: true, department: "Apache" },
+    { id: 2, name: "Bob Smith", title: "Jet Fighter Pilot", status: true, department: "F-16" },
+    { id: 3, name: "Charlie Brown", title: "Helicopter Pilot", status: false, department: "Black Hawk" },
+    { id: 4, name: "Diana Prince", title: "Jet Fighter Pilot", status: true, department: "F-35" },
+    { id: 5, name: "Ethan Clark", title: "Helicopter Pilot", status: true, department: "Chinook" },
+    { id: 6, name: "Fiona Davis", title: "Jet Fighter Pilot", status: false, department: "Su-27" },
+    { id: 7, name: "George Miller", title: "Helicopter Pilot", status: true, department: "Apache" },
+    { id: 8, name: "Hannah Wilson", title: "Jet Fighter Pilot", status: true, department: "MiG-29" },
+    { id: 9, name: "Ian Taylor", title: "Helicopter Pilot", status: false, department: "Black Hawk" },
+    { id: 10, name: "Julia Anderson", title: "Jet Fighter Pilot", status: true, department: "F-16" },
+];
 
 export const Employee = () => {
     return (

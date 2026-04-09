@@ -4,14 +4,16 @@ import Navbar from "./components/Navbar";
 import {Employee} from "./pages/Employee";
 import {Plane} from "./pages/Plane";
 import {Weather} from "./pages/Weather";
+import {PlanFlightButton} from "./components/PlanFlightButton";
 
 function App() {
     return (
         <div className="min-h-screen bg-gray-800">
             <div className="mx-auto min-h-screen max-w-7xl px-6 py-5 sm:px-10">
+
             <BrowserRouter>
                 <Navbar/>
-
+                <PlanFlightButton title="Plan Mission Flight"/>
                 <Routes>
                     <Route path="/" element={<Employee/>}/>
                     <Route path="/plane" element={<Plane/>}/>
