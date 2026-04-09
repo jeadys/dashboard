@@ -7,19 +7,19 @@ const planes: PlaneType[] = [
         id: 1,
         name: "Apache",
         title: "AH-64",
-        status: true,
+        flightHours: 1200,
     },
     {
         id: 2,
         name: "F-35",
         title: "Lightning II",
-        status: false,
+        flightHours: 850,
     },
     {
         id: 3,
         name: "F-16",
-        title: "Figthing Falcon",
-        status: true,
+        title: "Fighting Falcon",
+        flightHours: 2000,
     },
 ]
 

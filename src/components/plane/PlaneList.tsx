@@ -3,12 +3,13 @@ import {ListItem} from "../ListItem"
 import {PlaneName} from "./PlaneName.tsx";
 import {PlaneTitle} from "./PlaneTitle.tsx";
 import {useSearchFilter} from "../../hooks/useSearchFilter.tsx";
+import {PlaneFlightHours} from "./PlaneFlightHours.tsx";
 
 export type PlaneType = {
     id: number
     name: string
     title: string
-    status: boolean
+    flightHours: number
 }
 
 type Props = {
@@ -18,7 +19,7 @@ type Props = {
 export const PlaneList = ({planes}: Props) => {
     const { search, setSearch, filteredData } = useSearchFilter<PlaneType>(
         planes,
-        ["name", "title", "status"]
+        ["name", "title", "flightHours"]
     );
 
     return (
@@ -38,6 +39,8 @@ export const PlaneList = ({planes}: Props) => {
                      <PlaneName planeName={plane.name}/>
                      <PlaneTitle planeTitle={plane.title}/>
                   </span>
+
+                    <PlaneFlightHours planeFlightHours={plane.flightHours} />
                 </ListItem>
             ))}
         </List>
